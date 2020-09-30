@@ -56,7 +56,7 @@ class App extends Component
          <input type="text" className="form-control" placeholder="add items" aria-label="Recipient's username" aria-describedby="basic-addon2" value={this.state.currentTodo}
           onChange={e => {this.setState({ currentTodo: e.target.value });}}/>
           <div className="input-group-append">
-          <button className="input-group-text" id="basic-addon2" onClick={(e)=>{this.add(this.state.currentTodo);
+          <button className="input-group-text" id="button" onClick={(e)=>{this.add(this.state.currentTodo);
               this.setState({ currentTodo: "" });}}>Add</button>
           </div>
           </div>
